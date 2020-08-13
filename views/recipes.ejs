@@ -1,0 +1,16 @@
+<h1>Your recipes goes here!</h1>
+
+<h2>These are your recipes!</h2>
+<ul>
+  <% recipes.forEach(function(recipe){ %>
+  <li>
+    <%= recipe %>
+  </li>
+  <% }); %>
+</ul>
+
+<!-- action="<where the form is located> " -->
+<form class="" action="/addrecipe" method="post">
+  <input type="text" name="newrecipe" placeholder="recipe">
+  <button>Add a new recipe!</button>
+</form>
